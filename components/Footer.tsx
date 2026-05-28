@@ -130,17 +130,18 @@ export default function Footer() {
                 Buka di Google Maps
               </a>
 
-              {/* Map Placeholder */}
-              <div className="mt-5 rounded-2xl overflow-hidden border border-white/10 h-28 bg-white/5 flex items-center justify-center">
-                <a
-                  href="https://maps.app.goo.gl/MnJjgMbhDxxd2bZF6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors"
-                >
-                  <MapPin size={28} />
-                  <span className="text-xs tracking-wider">Lihat peta lokasi</span>
-                </a>
+              {/* Map Embed Extension */}
+              <div className="mt-5 rounded-2xl overflow-hidden border border-white/10 h-48 bg-white/5 relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.444243642354!2d104.7570413!3d-2.9742442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7700684f09d5%3A0x6a0a099a800b462c!2sTriple%20A%20Coffee!5e0!3m2!1sid!2sid!4v1716900000000!5m2!1sid!2sid"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="grayscale hover:grayscale-0 transition-all duration-500 opacity-80 hover:opacity-100"
+                ></iframe>
               </div>
             </div>
           </FadeInUp>

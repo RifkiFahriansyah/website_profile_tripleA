@@ -37,7 +37,7 @@ export default function SignatureMenu({ items }: SignatureMenuProps) {
     img: m.img,
     badge: m.badge,
     notes: m.notes,
-    category: m.badge?.toLowerCase().includes("coffee") ? "coffee" : "foods" // simple mapping for static
+    category: m.category
   }));
 
   // Merge: static dummy items first, then any real DB items appended after

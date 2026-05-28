@@ -45,9 +45,9 @@ export default async function MenuDetailPage({ params }: { params: Promise<{ id:
       </div>
 
       <div className="container mx-auto px-4 mt-8 lg:mt-12 max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Image Section */}
-          <div className="relative aspect-square md:aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl bg-cream/30">
+          <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl bg-cream/30 border border-gray-100">
             {item.img ? (
               <Image
                 src={item.img}
@@ -102,9 +102,15 @@ export default async function MenuDetailPage({ params }: { params: Promise<{ id:
             </div>
 
             <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Button className="h-14 rounded-xl bg-forest-green hover:bg-forest-green/90 text-white font-bold text-base gap-2 shadow-lg transition-all active:scale-95">
-                <BadgeCheck size={18} />
-                Order Now
+              <Button asChild className="h-14 rounded-xl bg-forest-green hover:bg-forest-green/90 text-white font-bold text-base gap-2 shadow-lg transition-all active:scale-95">
+                <a 
+                  href={`https://wa.me/6281366905551?text=${encodeURIComponent(`Halo Triple A Coffee, saya ingin memesan menu: ${item.name}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BadgeCheck size={18} />
+                  Chat via WhatsApp
+                </a>
               </Button>
               <Button variant="outline" className="h-14 rounded-xl border-2 border-forest-green text-forest-green font-bold text-base hover:bg-forest-green/5 transition-all">
                 Add to Favorites

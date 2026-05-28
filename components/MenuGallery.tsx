@@ -123,9 +123,16 @@ export default function MenuGallery() {
           <Button
             variant="ghost"
             size="lg"
+            asChild
             className="h-14 px-10 rounded-2xl text-forest-green hover:bg-forest-green/5 font-bold text-lg active:scale-95 transition-all gap-3 uppercase tracking-widest"
           >
-            <Instagram size={24} /> View On Instagram
+            <a
+              href="https://www.instagram.com/triple.acoffee/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram size={24} /> View On Instagram
+            </a>
           </Button>
         </div>
       </div>
