@@ -68,7 +68,7 @@ export default function Hero() {
             
             <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-deep-red/5 border border-deep-red/10 rounded-full text-deep-red font-semibold text-xs uppercase tracking-widest shadow-sm relative z-10 mx-auto lg:mx-0">
               <span className="w-1.5 h-1.5 bg-deep-red rounded-full animate-pulse" />
-              Est. 2024
+              Est. 2022
             </div>
 
             <h1
